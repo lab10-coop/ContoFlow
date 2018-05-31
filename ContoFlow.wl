@@ -54,7 +54,7 @@ ofis::usage="key for contos giving a list of ids which collects all outgoing flo
 oft::usage="key for Blocktime of most recent change of ofis.";
 
 
-Pay::usage="Pay[q, s->d] moves quantity q from source conto s to destination conto d if q is less or equal to the balance of s.";
+Pay::usage="Pay[q, s, d] moves quantity q from source conto s to destination conto d if q is less or equal to the balance of s.";
 
 
 Flows::usage="Flows[] returns associations for all flows.";
@@ -69,7 +69,7 @@ rate::usage="key for Flow giving the rate at which an accumulated quantity will 
 accu::usage="key for Flow giving the accumulated quantity of flows.";
 
 
-NewFlow::usage="NewFlow[s->d,r] creates a Flow from source s to destination d with flowrate r per BlockTimeStep.";
+NewFlow::usage="NewFlow[s, d,r] creates a Flow from source s to destination d with flowrate r per BlockTimeStep.";
 
 
 Harvest::usage="Harvest[f] requests settlement of quantities accumulated by Flow f.";
