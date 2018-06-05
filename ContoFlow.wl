@@ -66,10 +66,16 @@ Flow::usage="Flow[f] returns an association of keys and values for flow f. Flow[
 rate::usage="key for Flow giving the rate at which an accumulated quantity will change per BlockTimeStep.";
 
 
+rat::usage="key for Blocktime of most recent change of rate";
+
+
 accu::usage="key for Flow giving the accumulated quantity of flows.";
 
 
-NewFlow::usage="NewFlow[s, d,r] creates a Flow from source s to destination d with flowrate r per BlockTimeStep.";
+act::usage="key for Blocktime of most recent change of accu";
+
+
+NewFlow::usage="NewFlow[s,d,r] creates a Flow from source s to destination d with flowrate r per BlockTimeStep.";
 
 
 Harvest::usage="Harvest[f] requests settlement of quantities accumulated by Flow f.";
@@ -78,7 +84,7 @@ Harvest::usage="Harvest[f] requests settlement of quantities accumulated by Flow
 Hint::usage="Hint[d] suggests settlement for destination conto d.";
 
 
-Begin["`Private`"]
+Begin["`Private`"];
 
 
 (* 
